@@ -1,0 +1,31 @@
+{
+  "pages":[
+  
+    "pages/user/user",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/save/save"
+  ],
+  "window":{
+     "backgroundTextStyle":"light",
+     "navigationBarBackgroundColor": "#3F51B5",
+     "navigationBarTitleText": "陆向谦头条",
+    "navigationBarTextStyle":"white"
+   },
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "images/index1.png",
+        "iconPath": "images/index.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/user1.png",
+        "iconPath": "images/user.png",
+        "pagePath": "pages/user/user",
+        "text": "我"
+      }
+    ]
+  }
+}

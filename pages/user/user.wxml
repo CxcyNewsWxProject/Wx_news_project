@@ -1,0 +1,21 @@
+<view class="view">
+
+
+
+<view class="view2" bindtap="bindViewTap" >
+    <image class="userinfo-avatar" src="{{userphoto}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{username}}</text>
+</view>
+
+<view class="view3">
+    <image src="{{imageUrl}}"  class="image31"  bindtap="bindViewTap31"/>
+    <image src="/images/add.png" class="image32" bindtap="bindViewTap32"/>
+</view>
+
+<view class="view4">
+
+
+</view>
+
+
+</view>

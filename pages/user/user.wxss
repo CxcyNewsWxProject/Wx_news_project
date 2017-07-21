@@ -1,0 +1,55 @@
+.view{
+    height: 100%;
+    width: 100%;
+    
+    flex-direction:column;
+    display: flex;
+}
+
+
+.view2{
+    height: 106px;
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+    background-color: #5C6BC0;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname {
+  color: #aaa;
+}
+
+
+
+.view3{
+   height:49px;
+  justify-content:center;
+  display: flex;
+   border:1px  solid darkgray;
+   align-items: center;
+
+}
+.image31{
+ height:45px;
+  width: 80px;
+  padding:20px 20px;
+}
+
+.image32{
+   height:46px;
+  width: 80px;
+  padding:20px 20px;
+}
+
+
+
+.view4{
+  height:323px;
+  background-color: #F0F0F2;
+
+}
