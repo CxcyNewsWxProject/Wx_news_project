@@ -1,0 +1,94 @@
+/* pages/details/details.wxss */
+.view{
+    height: 100%;
+    width: 100%;
+    
+    flex-direction:column;
+    display: flex;
+}
+
+.view1{
+    height:45px;
+    flex-direction:row;
+    background-color: #8791ea;
+    justify-content: space-between;
+    
+}
+.image11{
+  height:45px;
+  width: 45px;
+  
+}
+.image12{
+  height:45px;
+  width: 65px;
+  padding-left: 37px;
+
+}
+.image13{
+  height:45px;
+  width: 40px;
+  padding-left:170px;
+}
+
+.view2{
+   height: 507px;
+   display: flex;
+   flex-direction: column;
+   background-color: #fff;
+}
+
+.introduction{
+  font-size:14px;
+}
+.photo {
+  width: 700rpx;
+  height: 350rpx;
+  align-self: center;
+  margin: 20rpx;
+}
+.content{
+   font-size:15px;
+}
+
+.view3{
+   height:35px;
+   background-color: #f8f8f8;
+  justify-content:center;
+  display: flex;
+   border:1px  solid darkgray;
+   align-items: center;
+
+}
+.image31{
+  height:35px;
+  width:40px;
+  padding-left:40px;
+}
+
+.image32{
+  height:35px;
+  width:40px;
+  padding-left:50px;
+}
+
+
+.view4{
+  height:323px;
+  background-color: #F0F0F2;
+
+}
+
+.input{
+    padding-left: 10px;
+    height: 44px;
+}
+
+.inputView{
+    border:2px;
+    border-color:#aaa;
+    border-radius: 50px;
+    margin-left: 15px;
+    margin-right: 5px;
+    margin-top: 15px;
+}

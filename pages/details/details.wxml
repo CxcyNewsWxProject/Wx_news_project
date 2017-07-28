@@ -1,0 +1,33 @@
+<!--pages/details/details.wxml-->
+<view class="view">
+
+<view class="view1" >
+<image src="/images/返回图标.png" class="image11" bindtap="bindViewTap1" />
+<image src="/images/标题栏背景.png" class="image12" />
+<image src="/images/更多图标.png" class="image13" bindtap="bindViewTap2"/>
+</view>
+
+
+
+<scroll-view scroll-y style="height: 521px;" class="view2" bindtap="bindViewTap" >
+  <view>
+    <text>{{title}}</text>
+  </view>
+
+    <text class="introduction">来源:{{from}}  作者:{{author}} 时间:{{time}}</text>
+    <image class="photo" src="/images/图片加载.jpeg"></image>
+    <text class="content">{{content}}</text>
+</scroll-view>
+
+<view class="view3">
+<input class="input" type="words" placeholder="评论"  />
+<image src="/images/收藏.png" class="image31" bindtap="bindViewTap31"/>
+<image src="/images/分享.png" class="image32" bindtap="bindViewTap32"/>
+</view>
+
+<view class="view4">
+
+</view>
+
+
+</view>
