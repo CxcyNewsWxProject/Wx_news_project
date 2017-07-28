@@ -11,13 +11,19 @@
     <image src="/images/add.png" class="image32" bindtap="bindViewTap32"/>
 </view>
 
-<view class="view4">
+<scroll-view class="view4">
 
   <view class="view41"> 
-      <view class="view42"><view class="view421">我的关注</view> <button class="button1">编辑</button></view>
-      <div class="view422" wx:for="{{items}}">
+
+      <div class="view42">
+            <p>我的关注</p> <button class="button1">编辑</button>
+      </div>
+
+      <div class="view422">
+      <div  wx:for="{{items}}">
            <!-- <view><button>人工智能</button><button>VR-AR</button></view> -->
            <div><button> {{item.title}}</button></div>
+      </div> 
       </div> 
      
 
@@ -32,7 +38,8 @@
       </view>
 
   </view>
-</view>
+
+</scroll-view>
 
 
 </view>

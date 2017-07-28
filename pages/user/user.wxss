@@ -1,14 +1,13 @@
 .view{
     height: 100%;
     width: 100%;
-    
     flex-direction:column;
     display: flex;
 }
 
 
 .view2{
-    height: 106px;
+    height: 250rpx;
    display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +26,7 @@
 
 
 .view3{
-   height:49px;
+   height:100rpx;
   justify-content:center;
   display: flex;
    border:1px  solid darkgray;
@@ -35,83 +34,82 @@
 
 }
 .image31{
- height:45px;
-  width: 80px;
-  padding:20px 20px;
+ height:90rpx;
+  width: 160rpx;
+  padding:50rpx 50rpx;
 }
 
 .image32{
-   height:46px;
-  width: 80px;
-  padding:20px 20px;
+   height:92rpx;
+  width: 160rpx;
+  padding:50rpx 50rpx;
 }
 
 
 
 .view4{
-  height:323px;
-  width:320px;
+  height:850rpx;
+  width:100%;
   background-color: #F0F0F2;
 
 }
 .view41{
-  padding:19px;
+  margin-left:50rpx;
+  margin-top: 40rpx;
 }
 
 .view42{
-  height:30px;
-   width:280px;
-}
-.view421{
-  height:30px;
-   width:225px;
+  height:80rpx;
+   width:700rpx;
+   display: flex;
+  flex-direction: row;
 }
  .view422 {
-  height:50px;
-    width:280px;
+  height:100rpx;
+    width:560rpx;
      display: flex;
     flex-direction: row;
       flex-wrap:  nowrap;
     justify-content:flex-start;
 }
 .view422 button{
-  height:25px;
-   width: 67px;
-   margin: 3px;
-   font-size: 12px;
+  height:60rpx;
+   width: 155rpx;
+   margin: 6rpx;
+   font-size: 24rpx;
    background-color: #5C6BC0;
    color:  white;
     display: flex;
     flex-direction: row;
     flex-wrap:  nowrap;
-    /* justify-content:flex-start;
-     align-items: flex-start; */
+    text-align:  center;
 } 
 .button1{
-   height:23px;
-   width: 52px;
+   height:46rpx;
+   width: 104rpx;
   font-size: 12px;
   background-color: #FF7043;
    color:  white;
- margin-right: 1px;
+  margin-right: 60rpx;
 
 }
 
 .view43{
-  height:230px;
-  width:280px;
+  height:450rpx;
+  width:700rpx;
+
 } 
  .view433 view{
-  height:25px;
-    width:280px;
-   padding: 5px;
+  height:50rpx;
+    width:650rpx;
+   padding-top: 30rpx;
      display: flex;
   flex-direction: row;
 
 }
-.view43 button{
-  height:25px;
-   width: 67px;
+.view433 button{
+  height:60rpx;
+   width: 155rpx;
    font-size: 12px;
-     align-items: flex-start;
+    align-items: flex-start;
 } 
