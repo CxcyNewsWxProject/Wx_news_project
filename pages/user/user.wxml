@@ -1,7 +1,6 @@
 <view class="view">
 
 
-
 <view class="view2" bindtap="bindViewTap" >
     <image class="userinfo-avatar" src="{{userphoto}}" background-size="cover"></image>
     <text class="userinfo-nickname">{{username}}</text>
@@ -14,7 +13,25 @@
 
 <view class="view4">
 
+  <view class="view41"> 
+      <view class="view42"><view class="view421">我的关注</view> <button class="button1">编辑</button></view>
+      <div class="view422" wx:for="{{items}}">
+           <!-- <view><button>人工智能</button><button>VR-AR</button></view> -->
+           <div><button> {{item.title}}</button></div>
+      </div> 
+     
 
+      <view class="view43">更多推荐
+      <view class="view433">
+           <view ><button  >电商</button> <button  >社交</button> <button  >硬件</button> <button  >传媒</button> </view>
+           <view><button  >文娱</button>  <button  >工具</button> <button  >消费生活</button> <button  >金融</button> </view>
+            <view><button  >医疗健康</button>  <button  >企业服务</button> <button  >旅游</button> <button  >房产家居</button> </view>
+            <view><button  >教育</button>  <button  >汽车交通</button> <button  >物流</button> <button  >人工智能</button> </view>
+           <view><button  >无人机</button>  <button  >机器人</button> <button  >VR-AR</button> <button  >体育</button> </view>
+      </view>
+      </view>
+
+  </view>
 </view>
 
 

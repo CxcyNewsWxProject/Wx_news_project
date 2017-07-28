@@ -8,8 +8,13 @@ Page({
   data: {
     username: null,
     userphoto: '/images/people.png',
-    // text:'',
-    imageUrl:'/images/save.png'
+    imageUrl:'/images/save.png',
+    items: [{
+      id: '01',
+      title: '人工智能'
+    }, {
+      id: '02',
+      title: 'VR-AR'}]
   },
   bindViewTap: function () {
     wx.navigateTo({
@@ -29,13 +34,7 @@ Page({
      })
 
    },
-  // downLoadImage: function (event) {
-  //   console.log(event)
-  //   var that = this;
-  //   this.setData({
-  //     imageUrl: "/images/save1.png"
-  //   })
-  // },
+ 
   /**
    * 生命周期函数--监听页面加载
    */
