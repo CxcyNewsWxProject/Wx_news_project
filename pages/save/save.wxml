@@ -1,8 +1,8 @@
 <view>
 
 <view class="view1">
-<view class="view11" bindtap="bindViewTap11">我的收藏</view>
-<view class="view12" bindtap="bindViewTap12">阅读历史</view>
+<view class="view11" bindtap="bindViewTap11" hover="true" hover-class="hover">我的收藏</view>
+<view class="view12" bindtap="bindViewTap12" hover="true" hover-class="hover">阅读历史</view>
 </view>
 
 <view class="view2">
