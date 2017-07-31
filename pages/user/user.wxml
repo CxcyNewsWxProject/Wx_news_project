@@ -6,14 +6,44 @@
     <text class="userinfo-nickname">{{username}}</text>
 </view>
 
-<view class="view3">
-    <image src="{{imageUrl}}"  class="image31"  bindtap="bindViewTap31"/>
-    <image src="/images/add.png" class="image32" bindtap="bindViewTap32"/>
+<view class="navbar">
+  <image wx:for="{{navbar}}" data-idx="{{index}}" data-index="{{index}}" class="item {{currentTab==index ? 'active' : ''}}"
+       src="{{item}}" wx:key="unique" bindtap="navbarTap">{{item}}</image>   
+     <!-- <image src="{{imageUrl}}"  class="image31"  bindtap="bindViewTap31"/>
+    <image src="{{imageUrl2}}" class="image32" bindtap="bindViewTap32"/>  -->
 </view>
 
-<scroll-view class="view4">
+<view class="view4">
 
-  <view class="view41"> 
+  <scroll-view hidden="{{currentTab!==0}}" scroll-y="true">  
+      <div> 
+    <view class="themes-list">
+      <view wx:for="{{articles}}" class="themes-list-box" data-aid="{{item.article_id}}" bindtap="onArticleClicked">
+            <view class="themes-list-main">
+              <!--标题-->
+              <view class="themes-list-name">{{item.title}}</view>
+              <!--作者-->
+              <view class="themes-list-description">作者：{{item.author}}</view>
+            </view>
+
+            <view class="themes-list-thumbnail">
+              <!--图片-->
+              <image class="themes-list-img" src="{{item.mainimg_url}}" />
+            </view>
+
+            <view class="box">
+                <view class="box-1">推荐 243</view>
+                <view class="box-2">阅读 200</view>
+                <view class="box-3">评论 2</view>
+            </view>
+      </view>
+    </view>
+
+      </div> 
+  </scroll-view> 
+
+
+  <view class="view41" hidden="{{currentTab!==1}}"> 
 
       <div class="view42">
             <p>我的关注</p> <button class="button1">编辑</button>
@@ -26,7 +56,6 @@
       </div> 
       </div> 
      
-
       <view class="view43">更多推荐
       <view class="view433">
            <view ><button  >电商</button> <button  >社交</button> <button  >硬件</button> <button  >传媒</button> </view>
@@ -39,7 +68,7 @@
 
   </view>
 
-</scroll-view>
+</view>
 
 
 </view>

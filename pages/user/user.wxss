@@ -25,25 +25,41 @@
 
 
 
-.view3{
+/* .view3{
    height:100rpx;
   justify-content:center;
   display: flex;
    border:1px  solid darkgray;
    align-items: center;
 
-}
-.image31{
- height:90rpx;
+} */
+.navbar{  
+  flex: none;  
+  display: flex;  
+  background: #fff ; 
+  height:100rpx;
+  justify-content:center;
+   border:1px  solid darkgray;
+   align-items: center;
+} 
+.navbar .item{  
+  height:90rpx;
   width: 160rpx;
-  padding:50rpx 50rpx;
-}
-
-.image32{
-   height:92rpx;
-  width: 160rpx;
-  padding:50rpx 50rpx;
-}
+  padding:50rpx 50rpx; 
+}  
+/* .navbar .item.active{  
+  color: #FFCC00;  
+}   */
+/* .navbar .item.active:after{  
+  content: "";  
+  display: block;  
+  position: absolute;  
+  bottom: 0;  
+  left: 0;  
+  right: 0;  
+  height: 4rpx;  
+  background: #FFCC00;  
+}   */
 
 
 
@@ -113,3 +129,59 @@
    font-size: 12px;
     align-items: flex-start;
 } 
+/* 收藏列表 */
+.themes-list{ 
+  background: #FFF; 
+  display: block; 
+  margin-bottom: 20px; 
+   background-color: #F0F0F2;
+  }
+.themes-list-box{
+  height: 220rpx;
+   display: block; 
+   position: relative; 
+   padding: 32rpx 40rpx; 
+   border-bottom: 1px solid #F2F2F2;
+    }
+.themes-list-main{ 
+  margin-left: 10rpx; 
+  }
+.themes-list-name{ 
+  font-size: 28rpx; 
+  color: #444; 
+  height: 80rpx;
+  width: 400rpx; 
+  line-height: 40rpx;
+  overflow: hidden;
+     }
+.themes-list-description{ 
+  font-size: 24rpx; 
+  color: #999; 
+  height: 40rpx; 
+  line-height: 40rpx; 
+  overflow: hidden; 
+  padding-top: 4rpx;
+  }
+.themes-list-thumbnail{ 
+  position: absolute; 
+  left: 480rpx; 
+  top: 32rpx; 
+  }
+.themes-list-img{ 
+  width: 200rpx; 
+  height: 120rpx; 
+  border-radius: 8rpx; 
+  border: 1px solid #F2F2F2;
+  }
+  .box{
+    background-color:#666;
+    width: 640rpx; 
+    height: 56rpx; 
+    margin-top: 20rpx;
+    display: flex;
+    flex-direction: row;
+    font-size: 24rpx; 
+    justify-content:  space-around;
+    align-items:  center;
+  }
+  
