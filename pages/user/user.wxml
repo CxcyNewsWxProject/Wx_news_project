@@ -22,8 +22,8 @@
             <view class="themes-list-main">
               <!--标题-->
               <view class="themes-list-name">{{item.title}}</view>
-              <!--作者-->
-              <view class="themes-list-description">作者：{{item.author}}</view>
+              <!--时间-->
+              <view class="themes-list-description">已推荐 {{item.post_time}}</view>
             </view>
 
             <view class="themes-list-thumbnail">

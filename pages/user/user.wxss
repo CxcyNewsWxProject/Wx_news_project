@@ -93,21 +93,24 @@
    width: 155rpx;
    margin: 6rpx;
    font-size: 24rpx;
-   background-color: #5C6BC0;
+    font-family: "黑体";
+   background-color: #979cd8;
    color:  white;
     display: flex;
     flex-direction: row;
     flex-wrap:  nowrap;
     text-align:  center;
+     border-radius: 10px;
 } 
 .button1{
    height:46rpx;
    width: 104rpx;
   font-size: 12px;
-  background-color: #FF7043;
+   font-family: "黑体";
+  background-color: #f6743c;
    color:  white;
   margin-right: 60rpx;
-
+ 
 }
 
 .view43{
@@ -125,9 +128,12 @@
 }
 .view433 button{
   height:60rpx;
-   width: 155rpx;
+   width: 160rpx;
    font-size: 12px;
+    font-family: "黑体";
     align-items: flex-start;
+    border-radius: 10px;
+    border: 1px solid #909090 ;
 } 
 /* 收藏列表 */
 .themes-list{ 
@@ -137,17 +143,18 @@
    background-color: #F0F0F2;
   }
 .themes-list-box{
-  height: 220rpx;
+  height: 200rpx;
    display: block; 
    position: relative; 
    padding: 32rpx 40rpx; 
-   border-bottom: 1px solid #F2F2F2;
+   border-bottom: 1px solid #d6d6d7 ;
     }
 .themes-list-main{ 
   margin-left: 10rpx; 
   }
 .themes-list-name{ 
   font-size: 28rpx; 
+   font-family: "黑体";
   color: #444; 
   height: 80rpx;
   width: 400rpx; 
@@ -156,11 +163,12 @@
      }
 .themes-list-description{ 
   font-size: 24rpx; 
+  font-family: "黑体";
   color: #999; 
   height: 40rpx; 
   line-height: 40rpx; 
   overflow: hidden; 
-  padding-top: 4rpx;
+  padding-top: 6rpx;
   }
 .themes-list-thumbnail{ 
   position: absolute; 
@@ -174,14 +182,32 @@
   border: 1px solid #F2F2F2;
   }
   .box{
-    background-color:#666;
+    background-color:#c7c5c6;
     width: 640rpx; 
     height: 56rpx; 
     margin-top: 20rpx;
     display: flex;
     flex-direction: row;
     font-size: 24rpx; 
-    justify-content:  space-around;
+    font-family: "黑体";
     align-items:  center;
+    
+  }
+  .box-1{
+    width: 213rpx;
+    border-right:1px solid #8b86cb; 
+     display: flex;
+     justify-content:  space-around;
+  }
+  .box-2{
+    width: 214rpx;
+    border-right:1px solid #8b86cb; 
+     display: flex;
+     justify-content:  space-around;
+  }
+  .box-3{
+    width: 213rpx;
+     display: flex;
+     justify-content:  space-around;
   }
   
