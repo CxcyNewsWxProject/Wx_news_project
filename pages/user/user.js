@@ -8,16 +8,22 @@ Page({
   data: {
     username: null,
     userphoto: '/images/people.png',
-    // imageUrl:'/images/save.png',
-    // imageUrl2: '/images/add.png',
-    items: [{
-      id: '01',
-      title: '人工智能'
-    }, {
-      id: '02',
-      title: 'VR-AR'}],
-     navbar: [ '/images/save.png' , '/images/add.png' ],
+    items: [{ id: '01', title: '人工智能'}, {id: '02', title: 'VR-AR'}],
+     navbar: [ '/images/save1.png' , '/images/add.png' ],
+     navbar1: ['/images/save.png', '/images/add1.png'],
+     items2: [{ id: '01', title: '电商' }, { id: '02', title: '社交' }, { id: '03', title: '硬件' },
+              { id: '04', title: '传媒' }, { id: '05', title: '文娱' }, { id: '06', title: '工具' },
+              { id: '07', title: '消费生活' }, { id: '08', title: '金融' }, { id: '09', title: '医疗健康' },
+              { id: '10', title: '企业服务' }, { id: '11', title: '旅游' }, { id: '12', title: '房产家居' },
+              { id: '13', title: '教育' }, { id: '14', title: '汽车交通' }, { id: '15', title: '物流' },
+              { id: '16', title: '人工智能' }, { id: '17', title: '无人机' }, { id: '18', title: '机器人' },
+              { id: '19', title: 'VR-AR' }, { id: '20', title: '体育' }],
+     
+     click:'',
+     scrollTop: 100,
+     scrollLeft: 0,
      currentTab: 0 ,
+     currentItem:0,
      dataThemes: [],
      lll: '1',
      ptitle: " ",
@@ -2483,17 +2489,26 @@ Page({
     ]
   },
   
+  
   navbarTap: function (e) {
     var that = this,
       //获取当前图片的下表
       index = e.currentTarget.dataset.index,
       //数据源
       navbar = this.data.navbar;
-   
-    this.setData({
+      this.setData({
       currentTab: e.currentTarget.dataset.idx
     })
+
+      var id = e.currentTarget.dataset.index;
+      console.log(id)
+      //设置当前样式
+      that.setData({
+      currentItem: e.currentTarget.dataset.idx
+    })
+
   } ,
+ 
   bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
@@ -2506,18 +2521,19 @@ Page({
     })
   },
 
-  // bindViewTap31: function () {
-  //   this.setData({
-  //     imageUrl: '/images/save1.png',
-  //   })
-
-
-  //  },
-  //  bindViewTap32:function(){
-  //    this.setData({
-  //      imageUrl2: '/images/add1.png',
-  //    })
-  //  },
+  button3: function (res) {
+    var id = res.currentTarget.dataset.index;
+    console.log(id)
+    console.log(res)
+    //要增加的数组
+    var newarray = [{
+      id: res.currentTarget.dataset.id,
+      title: res.currentTarget.dataset.title ,
+    }];
+    this.setData({
+      'items': this.data.items.concat(newarray)
+    });
+  },
  
   /**
    * 生命周期函数--监听页面加载
@@ -2536,6 +2552,7 @@ Page({
           userInfo: userInfo
         })
       })
+      
     // if(app.appData.userinfo==null){
     //   wx.navigateTo({url:"../logs/logs"})
     // }else{

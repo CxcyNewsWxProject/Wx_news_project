@@ -7,11 +7,14 @@
 
 
 .view2{
-    height: 250rpx;
+    height: 25%;
+    width: 100%;
    display: flex;
   flex-direction: column;
   align-items: center;
     background-color: #5C6BC0;
+    position:fixed;
+    top:0%;
 }
 .userinfo-avatar {
   width: 128rpx;
@@ -25,22 +28,18 @@
 
 
 
-/* .view3{
-   height:100rpx;
-  justify-content:center;
-  display: flex;
-   border:1px  solid darkgray;
-   align-items: center;
 
-} */
 .navbar{  
   flex: none;  
   display: flex;  
   background: #fff ; 
-  height:100rpx;
+  height:9%;
+   width: 100%;
   justify-content:center;
    border:1px  solid darkgray;
    align-items: center;
+   position:fixed;
+   top:23%
 } 
 .navbar .item{  
   height:90rpx;
@@ -64,16 +63,17 @@
 
 
 .view4{
-  height:850rpx;
+  height:67%;
   width:100%;
   background-color: #F0F0F2;
-
+  margin-top: 48%
 }
 .view41{
   margin-left:50rpx;
   margin-top: 40rpx;
+  
 }
-
+/*我的关注*/
 .view42{
   height:80rpx;
    width:700rpx;
@@ -82,16 +82,16 @@
 }
  .view422 {
   height:100rpx;
-    width:560rpx;
+    width:650rpx;
      display: flex;
     flex-direction: row;
-      flex-wrap:  nowrap;
+      flex-wrap:  wrap;
     justify-content:flex-start;
 }
 .view422 button{
   height:60rpx;
-   width: 155rpx;
-   margin: 6rpx;
+   width: 153rpx;
+   margin: 4rpx;
    font-size: 24rpx;
     font-family: "黑体";
    background-color: #979cd8;
@@ -99,9 +99,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap:  nowrap;
-    text-align:  center;
      border-radius: 10px;
+   justify-content: center;
+   align-items: center;
 } 
+/*编辑*/
 .button1{
    height:46rpx;
    width: 104rpx;
@@ -110,33 +112,38 @@
   background-color: #f6743c;
    color:  white;
   margin-right: 60rpx;
- 
+  display: flex;
+   justify-content: center;
+   align-items: center;
 }
-
+/*更多推荐*/
 .view43{
-  height:450rpx;
-  width:700rpx;
-
+  height:67%;
+  width:100%;
 } 
- .view433 view{
-  height:50rpx;
+ .view433 {
+  height:450rpx;
     width:650rpx;
    padding-top: 30rpx;
      display: flex;
-  flex-direction: row;
-
+    flex-direction: row;
+     flex-wrap:  wrap;
+    text-align:  center;
+    justify-content: center;
 }
 .view433 button{
   height:60rpx;
-   width: 160rpx;
+   width: 158rpx;
    font-size: 12px;
     font-family: "黑体";
     align-items: flex-start;
     border-radius: 10px;
-    border: 1px solid #909090 ;
+    border: 2rpx solid #909090;
+   margin: 2rpx;
 } 
 /* 收藏列表 */
 .themes-list{ 
+   height:80%;
   background: #FFF; 
   display: block; 
   margin-bottom: 20px; 
@@ -147,7 +154,7 @@
    display: block; 
    position: relative; 
    padding: 32rpx 40rpx; 
-   border-bottom: 1px solid #d6d6d7 ;
+   border-bottom: 2rpx solid #d6d6d7 ;
     }
 .themes-list-main{ 
   margin-left: 10rpx; 
@@ -179,8 +186,9 @@
   width: 200rpx; 
   height: 120rpx; 
   border-radius: 8rpx; 
-  border: 1px solid #F2F2F2;
+  border: 2rpx solid #F2F2F2;
   }
+  /* 收藏列表中的小框 */
   .box{
     background-color:#c7c5c6;
     width: 640rpx; 
@@ -191,7 +199,6 @@
     font-size: 24rpx; 
     font-family: "黑体";
     align-items:  center;
-    
   }
   .box-1{
     width: 213rpx;
@@ -201,7 +208,7 @@
   }
   .box-2{
     width: 214rpx;
-    border-right:1px solid #8b86cb; 
+    border-right:2rpx solid #8b86cb; 
      display: flex;
      justify-content:  space-around;
   }
