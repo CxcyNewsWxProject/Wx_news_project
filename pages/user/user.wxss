@@ -7,7 +7,7 @@
 
 
 .view2{
-    height: 25%;
+    height: 23%;
     width: 100%;
    display: flex;
   flex-direction: column;
@@ -42,9 +42,9 @@
    top:23%
 } 
 .navbar .item{  
-  height:90rpx;
-  width: 160rpx;
-  padding:50rpx 50rpx; 
+  height:79rpx;
+  width: 51rpx;
+  padding:100rpx 100rpx; 
 }  
 /* .navbar .item.active{  
   color: #FFCC00;  
@@ -63,75 +63,38 @@
 
 
 .view4{
-  height:67%;
+  height:100%;
   width:100%;
-  background-color: #F0F0F2;
-  margin-top: 48%
+  /* background-color: #F0F0F2; */
+  padding-top: 48%;
 }
 .view41{
-  margin-left:50rpx;
-  margin-top: 40rpx;
-  
-}
-/*我的关注*/
-.view42{
-  height:80rpx;
-   width:700rpx;
-   display: flex;
-  flex-direction: row;
-}
- .view422 {
-  height:100rpx;
-    width:650rpx;
-     display: flex;
-    flex-direction: row;
-      flex-wrap:  wrap;
-    justify-content:flex-start;
-}
-.view422 button{
-  height:60rpx;
-   width: 153rpx;
-   margin: 4rpx;
-   font-size: 24rpx;
-    font-family: "黑体";
-   background-color: #979cd8;
-   color:  white;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:  nowrap;
-     border-radius: 10px;
-   justify-content: center;
-   align-items: center;
-} 
-/*编辑*/
-.button1{
-   height:46rpx;
-   width: 104rpx;
-  font-size: 12px;
-   font-family: "黑体";
-  background-color: #f6743c;
-   color:  white;
-  margin-right: 60rpx;
-  display: flex;
-   justify-content: center;
-   align-items: center;
-}
-/*更多推荐*/
-.view43{
-  height:67%;
+   height:700rpx; 
   width:100%;
-} 
- .view433 {
-  height:450rpx;
-    width:650rpx;
-   padding-top: 30rpx;
+}
+/*我的订阅*/
+.view42{
+ margin-top: 50rpx;
+ margin-left: 50rpx;
+}
+.view43{
+  padding-top: 50rpx;
      display: flex;
     flex-direction: row;
      flex-wrap:  wrap;
     text-align:  center;
     justify-content: center;
 }
-.view433 button{
+.view44{
+   padding-bottom: 50rpx; 
+    /* padding-top: 50rpx; */
+     display: flex;
+    flex-direction: row;
+     flex-wrap:  wrap;
+    text-align:  center;
+    justify-content: center;
+}
+.normal{
   height:60rpx;
    width: 158rpx;
    font-size: 12px;
@@ -141,13 +104,25 @@
     border: 2rpx solid #909090;
    margin: 2rpx;
 } 
+.checked {
+    height:60rpx;
+   width: 158rpx;
+   font-size: 12px;
+    font-family: "黑体";
+    color:white;
+    align-items: flex-start;
+    border-radius: 10px;
+    border: 2rpx solid #909090 ;
+   margin: 2rpx;
+   background-color: #f6743c;
+}
 /* 收藏列表 */
 .themes-list{ 
-   height:80%;
+   height:90%;
   background: #FFF; 
   display: block; 
   margin-bottom: 20px; 
-   background-color: #F0F0F2;
+   /* background-color: #F0F0F2; */
   }
 .themes-list-box{
   height: 200rpx;
