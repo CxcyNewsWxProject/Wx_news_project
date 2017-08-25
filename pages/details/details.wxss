@@ -10,14 +10,15 @@
 .view1{
     height:45px;
     flex-direction:row;
-    background-color: #8791ea;
+    background-color: #98adf0;
     justify-content: space-between;
     
 }
 .image11{
-  height:45px;
-  width: 45px;
-  
+  height:25px;
+  width:25px;
+  padding-left: 14px;
+  padding-bottom:9px;
 }
 .image12{
   height:45px;
@@ -31,24 +32,26 @@
   padding-left:170px;
 }
 
-.view2{
-   height: 507px;
-   display: flex;
-   flex-direction: column;
-   background-color: #fff;
+.title{
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .introduction{
   font-size:14px;
+  padding-left: 14px;
+  
 }
 .photo {
   width: 700rpx;
   height: 350rpx;
   align-self: center;
-  margin: 20rpx;
+  margin: 5rpx;
+
 }
 .content{
    font-size:15px;
+   padding-right: 14px;
 }
 
 .view3{

@@ -1,22 +1,20 @@
 <!--pages/details/details.wxml-->
 <view class="view">
 
-<view class="view1" >
-<image src="/images/返回图标.png" class="image11" bindtap="bindViewTap1" />
-<image src="/images/标题栏背景.png" class="image12" />
-<image src="/images/更多图标.png" class="image13" bindtap="bindViewTap2"/>
+<view class="view1">
+<image src="/images/返回箭头.png" class="image11" bindtap="bindViewTap1" />
+<image src="/images/标题.png" class="image12" />
 </view>
 
 
 
 <scroll-view scroll-y style="height: 521px;" class="view2" bindtap="bindViewTap" >
-  <view>
-    <text>{{title}}</text>
-  </view>
-
-    <text class="introduction">来源:{{from}}  作者:{{author}} 时间:{{time}}</text>
-    <image class="photo" src="/images/图片加载.jpeg"></image>
+  <view class="title" wx:for="{{hello}}">
+    <text>{{item.title}}</text>
+    <text class="introduction" >来源:{{item.post_from}}  作者:{{item.author}} 时间:{{item.post_time}}</text>
+    <image class="photo" src="{{item.img_url}}"></image>
     <text class="content">{{content}}</text>
+  </view>
 </scroll-view>
 
 <view class="view3">
