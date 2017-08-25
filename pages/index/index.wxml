@@ -1,20 +1,28 @@
 <!-- 文章列表 -->
-      <view class="themes-list">
+<view class="themes-list">
+<scroll-view scroll-top="0" scroll-y="true"
+ bindscrolltolower="bindDownLoad">
 <!--当把we：for=。。。去掉后，就没有了下列的循环-->
-        <view class="themes-list-box" wx:for="{{hello}}">
-        <!--导航链接-->
-          <navigator >
+        <view class="themes-list-box" wx:for="{{hello}}">   <!--导航链接-->
+          <navigator url="../details/details?id={{item._id}}&biaoti={{item.title}}">
             <view class="themes-list-thumbnail">
             <!--图片-->
-              <image class="themes-list-img" src="{{item.mainimg_url}}" />
+              
             </view>
             <view class="themes-list-main">
             <!--标题-->
-              <view class="themes-list-name">{{item.title}}</view>
+              <view class="themes-list-name">{{item.title}}</view><image class="themes-list-img" src="{{item.img_url}}" /><image class="themes-list-img" src="{{item.img_url}}" /><image class="themes-list-img" src="{{item.img_url}}" />
               <!--作者-->
-              <view class="themes-list-description">作者：{{item.author}}</view>
+              <view > <view class="themes-list-description">作者：{{item.author}}</view></view>
+             
+              
             </view>
           </navigator>
         </view>
-
+</scroll-view>
+<view>
+<loading hidden="{{hidden}}"  bindchange="loadingChange">
+加载中...</loading>
+</view>
       </view>
+          
