@@ -65,14 +65,17 @@ Page({
           "img_url": "http://cdn.lieyunwang.com/wp-content/uploads/2017/08/0c53047b2ac2381.jpg?imageView2/1/w/520/h/312/imageMogr2/strip/interlace/1/quality/85/format/jpg",
           "summary": "有传言称它从Ardent Capital那里获得过融资。"
         }
-      ]
+      ],
+      id: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (options) { 
+      this.setData({
+        id: options.id
+      })
   },
 
   /**
