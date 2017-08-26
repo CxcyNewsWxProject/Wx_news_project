@@ -7,17 +7,19 @@
 </view>
 
 <view class="navbar">
-<block  wx:if="{{currentItem==0?'active':''}}">
-  <image  wx:for="{{navbar}}" data-idx="{{index}}" data-index="{{index}}" class="item {{currentTab==index ? 'active' : ''}}"
-       src="{{item}}" wx:key="unique" bindtap="navbarTap"></image> </block>  
-<block wx:else >  
-     <image wx:for="{{navbar1}}" data-idx="{{index}}" data-index="{{index}}" class="item {{currentTab==index ? 'active' : ''}}"
-       src="{{item}}" wx:key="unique" bindtap="navbarTap"></image>   </block>
+ <block  wx:if="{{currentTab==0?'active':''}}">
+       <image class="item " data-idx="0" src="/images/save1.png"  bindtap="navbarTap"></image> 
+       <image class="item " data-idx="1" src="/images/add.png"    bindtap="navbarTap1"></image>
+ </block> 
+ <block  wx:else> 
+       <image class="item " data-idx="0" src="/images/save.png"  bindtap="navbarTap"></image> 
+       <image class="item " data-idx="1" src="/images/add1.png"  bindtap="navbarTap1"></image>
+ </block> 
 </view>
 
 <view class="view4">
 
-  <scroll-view hidden="{{currentTab!==0}}" scroll-y="true"  style="height:750rpx" >  
+  <scroll-view  hidden="{{currentTab!==0}}" scroll-y="true"  style="height:750rpx"  >  
       <div> 
     <view class="themes-list">
  

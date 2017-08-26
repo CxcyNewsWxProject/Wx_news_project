@@ -8,8 +8,7 @@ Page({
   data: {
     username: null,
     userphoto: '/images/people.png',
-     navbar: [ '/images/save1.png' , '/images/add.png' ],
-     navbar1: ['/images/save.png', '/images/add1.png'],
+    
      items2: [{ id: '0', title: '电商' }, { id: '1', title: '社交' }, { id: '2', title: '硬件' },
               { id: '3', title: '传媒' }, { id: '4', title: '文娱' }, { id: '5', title: '工具' },
               { id: '6', title: '消费生活' }, { id: '7', title: '金融' }, { id: '8', title: '医疗健康' },
@@ -21,40 +20,62 @@ Page({
    
      //按钮设置
      currentTab: 0 ,
-     currentItem:0,
 
   },
  
   
   navbarTap: function (e) {
-    var that = this,
-      //获取当前图片的下表
-      index = e.currentTarget.dataset.index,
-      //数据源
-      navbar = this.data.navbar;
+    //console.log(e)
       this.setData({
-      currentTab: e.currentTarget.dataset.idx
+      currentTab: 0 
     })
+ 
+      var id = e.currentTarget.dataset.idx;
+       console.log(id)
+       
+      //新闻列表刷新
+      var that=this;
+      wx.request({
+        url: 'http://101.201.68.38:8000/postapi/postapi/?format=json',
 
-      var id = e.currentTarget.dataset.index;
-      console.log(id)
-      //设置当前样式
-      that.setData({
-      currentItem: e.currentTarget.dataset.idx
-    })
+        header: {
+          'Content-Type': 'application/json'
+        },
+        success: function (res) {
+          console.log(res)
+        
 
+          that.setData({
+            articles: res.data,
+          })
+
+        }
+      })
   } ,
+  navbarTap1: function (e){
+   // console.log(e)
+    this.setData({
+      currentTab:1
+    })
+
+    var id = e.currentTarget.dataset.idx;
+    console.log(id)
+    
+  },
  
   bindViewTap: function () {
     wx.navigateTo({
       url: '../logs/logs'
     })
   },
+  
   onArticleClicked: function (e) {
     var aid = e.currentTarget.dataset.aid
     wx.navigateTo({
-      url: '/pages/detail/detail?_id=' + aid
+      url: '/pages/details/details?_id=' + aid
     })
+
+   
   },
 
  
@@ -62,24 +83,23 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
     var that = this
     wx.request({
-      url: 'http://101.201.68.38:8000/postapi/postapi/collection/',
-     
+      url: 'http://101.201.68.38:8000/postapi/postapi/?format=json',
+
       header: {
         'Content-Type': 'application/json'
       },
       success: function (res) {
         console.log(res)
-       // console.log(res.data.)
 
-        that.setData({ 
+        that.setData({
           articles: res.data,
         })
-           
+
       }
     }),
+   
     
    
   
